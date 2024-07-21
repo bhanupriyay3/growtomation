@@ -1,0 +1,207 @@
+/*
+ Theme Name: Demo Theme
+ Theme URI: http://example.com/demo-theme
+ Author: Your Name
+ Author URI: http://example.com
+ Description: A custom demo theme
+ Version: 1.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: responsive, custom-theme
+ Text Domain: demo-theme
+*/
+
+/* Basic styling */
+/* Basic styling */
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.site-header {
+    /* background-color: #333; */
+    color: white;
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.main-navigation {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #7c7c7c;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+form label{margin-bottom: 0!important;}
+form{margin: 0!important;}
+.header-search {
+    max-width: 200px;
+}
+
+.search-form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-field {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-submit {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-submit:hover {
+    background-color: #444;
+}
+
+.search-submit i {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-navigation {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .header-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+      }
+header {
+    box-shadow: 0px 2px 3px 0px #afafaf;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.header-search {
+    display: inline-block;
+}
+
+.header-search input {
+    padding: 5px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-column, .sidebar {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.main-column {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-column, .sidebar {
+        flex: 1;
+    }
+}
